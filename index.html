@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +9,42 @@
   <title>🧑🏿‍🦱vaibhav</title>
 </head>
 <body>
-  <div class="container">
-    <h1>Hello I'm Vaibhav Shukla</h1>
-    <h2>A Developer/Freelancer/Thinker/Creator</h2>
-    <p>Ping me at <a href="mailto:vaibhavshukla.try@gmail.com">vaibhavshukla.try@gmail.com</a>to have a chat.</p>
+  <div id="page">
+    <div class="container">
+      <h1>Hello I'm <br> <u>Vaibhav Shukla</u> </h1>
+      <h2>A Developer / Freelancer / Thinker / Creator</h2>
+      <p>Ping me at </p>
+      <a href="mailto:vaibhavshukla.try@gmail.com">vaibhavshukla.try@gmail.com</a>
+      <p> have a chat.</p>
+      <h3>or connect with me on <br> social media</h3>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/vaibhav-shukla-ai/" class="fa fa-linkedin"></a>
+        <a href="https://twitter.com/vabhavcodian" class="fa fa-twitter"></a>
+      </div>
+      
+
+    </div>
   </div>
 
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script>
+VANTA.BIRDS({
+  el: "#page",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0xf7f7f7,
+  color1: 0x3693a2,
+  color2: 0x7fb0c0,
+  birdSize: 1.30,
+  quantity: 4.00,
+  backgroundAlpha: 0.13
+})
+</script>
 </html>
