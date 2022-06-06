@@ -13,18 +13,17 @@ body {
 
 .container {
     padding: 16px 36px;
-    min-height: 80vh;
+    min-height: 100vh;
     max-width: 80%;
     margin: 0 auto;
     border-radius: 1%;
-    background: #0e0d0d1f;
     -webkit-border-radius: 1%;
     -moz-border-radius: 1%;
     -ms-border-radius: 1%;
     -o-border-radius: 1%;
 }
 h1 {
-    text-shadow: 2px 2px 20px #adc6dd;
+    text-shadow: 2px 2px 1px #adc6dd;
 }
 
 a {
@@ -32,6 +31,8 @@ a {
     padding: 5px 10px;
     text-decoration: none;
     color: rgb(6, 12, 32);
+    box-shadow: 2px 2px  #adc6dd;
+    border: #295f79 solid 2px;
 }
 a:hover {
     background: rgb(31, 132, 163);
@@ -45,4 +46,18 @@ a:hover {
 }
 .socials > * {
     border: #295f79 solid 2px;
+}
+
+.scrolldown {
+    display: block;
+    width: 20px;
+    text-align: center;
+    margin: 10vh auto;
+}
+.scrolldown a {
+    background: none;
+    font-size: 2.5em;
+    margin-left: -2vw;
+    border: none;
+    box-shadow: none;
 }

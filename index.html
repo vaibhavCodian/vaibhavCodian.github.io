@@ -1,37 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>🧑🏿‍🦱vaibhav</title>
+  
 </head>
 <body>
   <div id="page">
     <div class="container">
-      <h1>Hello I'm <br> <u>Vaibhav Shukla</u> </h1>
+      <h1>Hello, I'm <br> <u>Vaibhav Shukla</u> </h1>
       <h2>A Developer / Freelancer / Thinker / Creator</h2>
       <p>Ping me at </p>
       <a href="mailto:vaibhavshukla.try@gmail.com">vaibhavshukla.try@gmail.com</a>
-      <p> have a chat.</p>
-      <h3>or connect with me on <br> social media</h3>
+      <p> to have a chat or<br>
+      connect with me on <br> social media</p>
       <div class="socials">
-        <a href="https://www.linkedin.com/in/vaibhav-shukla-ai/" class="fa fa-linkedin"></a>
-        <a href="https://twitter.com/vabhavcodian" class="fa fa-twitter"></a>
+        <a href="https://twitter.com/vabhavcodian" class="fa-brands fa-twitter" target="_blank"></a>
+        <a href="https://www.linkedin.com/in/vaibhav-shukla-ai/" class="fa-brands fa-linkedin-in" target="_blank"></a>
+        <a href="https://github.com/vaibhavCodian" class="fa-brands fa-github" target="_blank"></a>
+        
       </div>
+
+      <div class="scrolldown" onclick="window.scrollBy(0, 99 * window.innerHeight/100)">
+        <a class="fa fa-angles-down"></a>
+        <h5>Scroll down</h5>
+      </div>
+
+    </div>
+    <!-- //Projects -->
+    <div class="container" id="projects" data-aos="zoom-in-right">
+      <h2> Projects <br> by me </h3>
+      
+      <h3>Fashion Magazine Site</h3>
+      <a href="https://beattractive.in/">BeAttractive.in </a>
+      <p> year 2018</p>
+      
+      <h3>Artist Portfolio</h3>
+      <a href="http://jaiswalsagar.com/">jaiswalsagar.com </a>
+      <p> year 2019</p>
+      
+
+    </div>
+    <!-- // Achievements / Academics  -->
+    <div class="container" data-aos="zoom-in-left">
+      <h2> Achievement </h2>
+      <h4> Diploma in Computer Engineering 89%</h4>
+      <h4> Udacity Machine Learing Engineer Nano Degree <i class="fas fa-check"></i></h4>
+      <h4> Coursera Machine Learing Specialization <i class="fas fa-check"></i> </h4>
+      <h4> Currenty Studying BSc IT (TY.Bsc.IT) <i class="fas fa-hard-hat"></i> </h4> 
+      <a href="mailto:vaibhavshukla.try@gmail.com">Download My Resume</a>
       
 
     </div>
   </div>
 
+<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js" integrity="sha512-6+YN/9o9BWrk6wSfGxQGpt3EUK6XeHi6yeHV+TYD2GR0Sj/cggRpXr1BrAQf0as6XslxomMUxXp2vIl+fv0QRA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+AOS.init();
 VANTA.BIRDS({
-  el: "#page",
+  el: "body",
   mouseControls: true,
   touchControls: true,
   gyroControls: false,
@@ -46,5 +82,13 @@ VANTA.BIRDS({
   quantity: 4.00,
   backgroundAlpha: 0.13
 })
+
+let howl = new Howl({
+  src: ['assets/Alpha.mp3'],
+  autoplay: true,
+  loop: true,
+  volume: 0.5,
+})
+
 </script>
 </html>
