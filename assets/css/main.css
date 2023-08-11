@@ -633,15 +633,15 @@ body {
 .intro--banner button .btn-background {
   position: absolute;
   top: 0;
-  left: 23px;
+  left: 0;
   right: 0;
   height: 100%;
   background-color: #002e5a;
   z-index: -1;
-  transition: left 0.2s ease-in-out;
+  transition: background-color 0.1s ease-in-out;
 }
 .intro--banner button:hover .btn-background {
-  left: 0;
+  background-color: #194B7F;
 }
 .intro--banner button:focus {
   outline: none;
